@@ -43,11 +43,11 @@ export const NavBar = () => {
                 </Nav>
                 <span className="navbar-text">
                     <div className="social-icon">
-                        <a href="https://www.linkedin.com/in/richardli2003/"><img src={navIcon1} alt=""/></a>
-                        <a href="https://www.google.com/"><img src={navIcon2} alt=""/></a>
-                        <a href="https://www.instagram.com/"><img src={navIcon3} alt=""/></a>
+                        <a href="https://www.linkedin.com/in/richardli2003/" target="_blank" rel="noreferrer"><img src={navIcon1} alt=""/></a>
+                        <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src={navIcon2} alt=""/></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><img src={navIcon3} alt=""/></a>
                     </div>
-                    <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
+                    <Nav.Link href="#connect" className={activeLink === 'about' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('connect')}><button className="vvd"><span>Let's Connect</span></button></Nav.Link>
                 </span>
                 </Navbar.Collapse>
             </Container>
