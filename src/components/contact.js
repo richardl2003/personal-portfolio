@@ -59,7 +59,7 @@ export const Contact = () => {
                         </Col>
                         <Col>
                             <p class="text-start mt-5 mb-0 text-muted">Social Links</p>
-                            <div className="social-icon d-flex flex-column mt-2">
+                            <div className="social-icon d-flex flex-column mt-2 mb-5">
                                 <a href="https://www.linkedin.com/in/richardli2003/" target="_blank" rel="noreferrer"><img src={navIcon1} alt=""/></a>
                             </div>
                         </Col>
