@@ -238,13 +238,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
   margin-top: 0;
-  position: relative;
-  padding: 175px 0 100px 0;
-  height: 100%;
-  overflow: hidden;
-  width: 100%;
+  background-image: url('./assets/img/hero.png');
+  background-position: top center;
   background-size: cover;
-  background-position: 100%;
+  background-repeat: no-repeat;
+  height:100vh
 
 }
 .banner .tagline {
@@ -266,7 +264,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #484242;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -276,7 +274,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: rgb(12, 4, 4);
   font-weight: 700;
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: 30px;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
@@ -290,9 +288,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
+/*
 .banner img {
   animation: updown 3s linear infinite;
 }
+*/
 @keyframes updown {
     0% {
         transform: translateY(-20px);
@@ -308,11 +308,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
-@media screen and (max-width: 600px) {
-  .banner {
-    padding: 100px 0 100px 0;
-  }
-}
 
 /************ Skills Css **************/
 .skill {
@@ -326,7 +321,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
+  
 }
 
 .skill h2 {

@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import { ArrowRightCircle } from 'react-bootstrap-icons'
-import headerImage from '../assets/img/about.png'
 
 export const Banner = () => {
 
@@ -42,20 +41,12 @@ export const Banner = () => {
     }
 
     return (
-        <section className="banner" id="home">
-            <Container>
-                <Row className='gx-5 align-items-center d-flex d-md-block'>
-                    <Col xs={12} md={6} xl={5} className="float-end">
-                        <img class="shadow-lg rounded-circle" src={headerImage} alt="Profile shot" />
-                    </Col>
-                    <Col xs={12} md={6} xl={7} className="float-end">
-                        <span className='tagline'>Welcome to my Portfolio</span>
-                        <h1><span className='wrap'>{text}</span></h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <button onClick={() => console.log('about')}>Learn more <ArrowRightCircle size={25}/></button>
-                    </Col>
-
-                </Row>
+        <section className="banner position-relative" id="home">
+            <Container className='position-absolute top-50 start-50 translate-middle'>
+                <span className='tagline'>Welcome to my Portfolio</span>
+                <h2><span className='wrap display-2'>{text}</span></h2>
+                <p>Software Engineering Student at McMaster University</p>
+                <button onClick={() => console.log('about')}>Learn more <ArrowRightCircle size={25}/></button>
             </Container>
         </section>
     )
