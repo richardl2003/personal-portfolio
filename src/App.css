@@ -141,7 +141,7 @@ span.navbar-text {
     background-color: #ffffff;
     border-radius: 100%;
     transform: scale(0);
-	transition: 0.3s ease-in-out;
+	  transition: 0.3s ease-in-out;
 }
 .social-icon a:hover::before {
     transform: scale(1);
@@ -366,7 +366,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: rgb(249, 173, 137);
+  background-color: #f0e7db;
 }
 .project h2 {
 	font-size: 45px;
@@ -514,7 +514,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form input, .contact form textarea {
   width: 100%;
-  background: rgb(249, 173, 137);
+  background: #f0cb99;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   color: #fff;
@@ -541,24 +541,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button {
   font-weight: 700;
   color: #000;
-  background-color: #fff;
+  background-color: transparent;
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
-  border-radius: 0;
+  border-radius: 1px;
   position: relative;
   transition: 0.3s ease-in-out;
+  border: 2px solid rgb(12, 4, 4)
 }
 .contact form button span {
   z-index: 1;
   position: relative;
 }
 .contact form button:hover {
-  color: #fff;
+  color: #000;
 }
 .contact form button::before {
   content: "";
-  background: rgb(249, 173, 137);
+  background: #fff;
   width: 0;
   height: 100%;
   position: absolute;
