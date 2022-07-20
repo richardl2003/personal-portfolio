@@ -27,7 +27,6 @@ export const NavBar = () => {
     }
 
     return (
-        // Add a profile picture for Navbar.brand
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
             <Container>
                 <Navbar.Brand href="#home"> 
@@ -48,7 +47,7 @@ export const NavBar = () => {
                         <a href="https://www.google.com/" target="_blank" rel="noreferrer"><img src={navIcon2} alt=""/></a>
                         <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><img src={navIcon3} alt=""/></a>
                     </div>
-                    <Nav.Link href="#connect" className={activeLink === 'about' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('connect')}><button className="vvd"><span>Let's Connect</span></button></Nav.Link>
+                    <Nav.Link href="#connect" className={activeLink === 'connect' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('connect')}><button className="vvd"><span>Let's Connect</span></button></Nav.Link>
                 </span>
                 </Navbar.Collapse>
             </Container>
