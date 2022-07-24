@@ -308,11 +308,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .about {
   text-align: center;
+  padding: 30px;
+}
+
+.about h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
 }
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
+  margin: 8rem;
 }
 
 .about__me {
@@ -334,14 +342,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .about__card p {
-  font-size: 0.95rem;
-  margin: 2rem 0 2.6rem;
+  color: #525252;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
 }
 
 @media screen and (max-width: 1024px) {
   .about__container {
     grid-template-columns: 1fr;
     gap: 0;
+    margin: 4rem
   }
 
   .about__me {
@@ -369,52 +383,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-/************ Skills Css **************/
-.skill {
-  padding: 30px 0 50px 0;
-  position: relative;
-  background : #f0e7db;
-}
-
-.skill-bx {
-  background : #f0cb99;
-  border-radius: 64px;
-  text-align: center;
-  padding: 60px 50px;
-  
-}
-
-.skill h2 {
-  font-size: 45px;
-  font-weight: 700;
-}
-
-.skill p {
-  color:rgb(12, 4, 4);
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  list-style: 1.5rem;
-  margin-top: 14px 0 75px 0;
-}
-
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-}
-
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
-}
-
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
-}
 
 /************ Projects Css ************/
 /*rgb(233, 151, 113)*/
