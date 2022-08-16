@@ -46,7 +46,7 @@ export const Banner = () => {
                 <span className='tagline'>Welcome to my Portfolio</span>
                 <h2><span className='wrap display-2'>{text}</span></h2>
                 <p>Software Engineering Student at McMaster University</p>
-                <button onClick={() => console.log('about')}>Learn more <ArrowRightCircle size={25}/></button>
+                <a href="/#about">Learn more <ArrowRightCircle size={25}/></a>
             </Container>
         </section>
     )
