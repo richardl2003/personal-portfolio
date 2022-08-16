@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react'
 import { Container } from 'react-bootstrap'
 import { ArrowRightCircle } from 'react-bootstrap-icons'
+import 'animate.css'
+import TrackVisibility  from 'react-on-screen'
 
 export const Banner = () => {
 
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Hi!", "I'm Richard Li"];
+    const toRotate = ["Student", "Curious", "Developer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -43,10 +45,17 @@ export const Banner = () => {
     return (
         <section className="banner position-relative" id="home">
             <Container className='position-absolute top-50 start-50 translate-middle'>
-                <span className='tagline'>Welcome to my Portfolio</span>
-                <h2><span className='wrap display-2'>{text}</span></h2>
-                <p>Software Engineering Student at McMaster University</p>
-                <a href="/#about">Learn more <ArrowRightCircle size={25}/></a>
+                <TrackVisibility>
+                {({ isVisible }) =>
+                    <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                        <span className='tagline'>Welcome to my Portfolio</span>
+                        <h2><span className='display-2'>Hi! I'm Richard Li</span></h2>
+                        <h2><span className='wrap display-2'>{text}</span></h2>
+                        <p>Software Engineering Student at McMaster University</p>
+                        <a href="/#about">Learn more <ArrowRightCircle size={25}/></a>
+                    </div>
+                }
+                </TrackVisibility>
             </Container>
         </section>
     )
