@@ -1,7 +1,6 @@
 import { Col, Row, Tab, Container } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import gitAPI from "../assets/img/gitAPI.png"
-import spending from "../assets/img/gitAPI.png"
 import tictactoe from "../assets/img/tictactoe.png"
 import minesweeper from "../assets/img/minesweeper.png"
 
@@ -13,12 +12,6 @@ export const Projects = () => {
             description: "Full Stack Web Application to remember commonly used Git Commands",
             imgUrl: gitAPI,
             linkUrl: "https://github.com/richardl2003/git_commands_RestAPI"
-        },
-        {
-            title: "Transaction Data Analyzer",
-            description: "Tracks spending habits visually",
-            imgUrl: spending,
-            linkUrl: "https://github.com/richardl2003/transaction_tracker"
         },
         {
             title: "Tictactoe AI",
