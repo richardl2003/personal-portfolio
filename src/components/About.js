@@ -13,10 +13,15 @@ export const About = () => {
                 </div>
 
                 <div className='about__content'>
-                    <p className='h4 text-left'>
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-                        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, 
-                        as opposed to using 'Content here, content here', making it look like readable English.
+                    <p className='lead text-left'>
+                        I'm a second year Software Engineering student attending McMaster University. 
+                    </p>
+                    <p className='lead text-left'>
+                        I love the thrill of learning new technical skills as there are numerous applications that technology can help advance our society. Most recently, I finished my first Co-op working as a 
+                        research assistant at McMaster University investigating merge conflicts in Git.
+                    </p>
+                    <p className='lead text-left'>
+                        I hope to continue to gain experience in the field of Software Engineering, as I have a keen interest in DevOps, Full Stack Development, and Artifical Intelligence.
                     </p>
                 </div>
             </div>
